@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital no Campo</title>
+    <!-- Incluindo Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Cor de fundo suave */
+        }
+        .hero-background {
+            background-image: url('https://placehold.co/1920x800/22c55e/ffffff?text=Produtor+Rural+Conectado'); /* Placeholder image for hero */
+            background-size: cover;
+            background-position: center;
+        }
+        .section-gradient {
+            background: linear-gradient(to right, #10b981, #34d399); /* Gradiente verde para seções */
+        }
+        .btn-primary {
+            background-color: #10b981; /* Verde primário */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #059669; /* Verde mais escuro ao passar o mouse */
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navegação (Header) -->
+    <header class="bg-white shadow-lg p-4 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-emerald-600 rounded-lg p-2 hover:bg-emerald-50 transition duration-300">Inclusão Digital no Campo</a>
+            <ul class="flex space-x-6">
+                <li><a href="#inicio" class="text-gray-700 hover:text-emerald-600 font-medium rounded-md p-2 transition duration-300">Início</a></li>
+                <li><a href="#sobre" class="text-gray-700 hover:text-emerald-600 font-medium rounded-md p-2 transition duration-300">Sobre</a></li>
+                <li><a href="#servicos" class="text-gray-700 hover:text-emerald-600 font-medium rounded-md p-2 transition duration-300">Serviços</a></li>
+                <li><a href="#testemunhos" class="text-gray-700 hover:text-emerald-600 font-medium rounded-md p-2 transition duration-300">Testemunhos</a></li>
+                <li><a href="#contato" class="text-gray-700 hover:text-emerald-600 font-medium rounded-md p-2 transition duration-300">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero-background text-white text-center py-24 md:py-32 rounded-b-3xl mb-12 flex items-center justify-center">
+        <div class="bg-black bg-opacity-50 p-8 rounded-2xl mx-4 max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">Conectando o Campo à Era Digital</h1>
+            <p class="text-lg md:text-xl mb-8">Capacitando produtores rurais com tecnologia para um futuro mais próspero e conectado.</p>
+            <a href="#servicos" class="btn-primary inline-block text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105">Saiba Mais Sobre Nossos Serviços</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="container mx-auto py-16 px-4 mb-12 bg-white rounded-3xl shadow-xl">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-emerald-700 mb-4">Sobre a Inclusão Digital no Campo</h2>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">Nossa missão é levar o conhecimento e as ferramentas digitais para as comunidades rurais, promovendo o desenvolvimento e a melhoria da qualidade de vida.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card flex flex-col items-center text-center">
+                <img src="https://placehold.co/100x100/10b981/ffffff?text=Missão" alt="Missão" class="w-24 h-24 mb-4 rounded-full p-2 bg-emerald-100">
+                <h3 class="text-xl font-semibold text-emerald-600 mb-2">Nossa Missão</h3>
+                <p class="text-gray-600">Democratizar o acesso à tecnologia e ao conhecimento digital para produtores rurais.</p>
+            </div>
+            <div class="card flex flex-col items-center text-center">
+                <img src="https://placehold.co/100x100/10b981/ffffff?text=Visão" alt="Visão" class="w-24 h-24 mb-4 rounded-full p-2 bg-emerald-100">
+                <h3 class="text-xl font-semibold text-emerald-600 mb-2">Nossa Visão</h3>
+                <p class="text-gray-600">Ser referência na promoção da inclusão digital, impulsionando a inovação no campo.</p>
+            </div>
+            <div class="card flex flex-col items-center text-center">
+                <img src="https://placehold.co/100x100/10b981/ffffff?text=Valores" alt="Valores" class="w-24 h-24 mb-4 rounded-full p-2 bg-emerald-100">
+                <h3 class="text-xl font-semibold text-emerald-600 mb-2">Nossos Valores</h3>
+                <p class="text-gray-600">Inovação, ética, sustentabilidade, e compromisso com o desenvolvimento rural.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Nossos Serviços -->
+    <section id="servicos" class="section-gradient text-white py-16 px-4 mb-12 rounded-3xl shadow-xl">
+        <div class="container mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Nossos Serviços</h2>
+            <p class="text-lg max-w-3xl mx-auto">Oferecemos uma gama de serviços para capacitar o homem do campo na era digital.</p>
+        </div>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card bg-white text-gray-800">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-3">Acesso à Internet</h3>
+                <p class="text-gray-700">Disponibilização de infraestrutura e conectividade em áreas rurais remotas.</p>
+            </div>
+            <div class="card bg-white text-gray-800">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-3">Cursos e Treinamentos</h3>
+                <p class="text-gray-700">Capacitação em ferramentas digitais, agricultura de precisão e e-commerce.</p>
+            </div>
+            <div class="card bg-white text-gray-800">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-3">Consultoria Tecnológica</h3>
+                <p class="text-gray-700">Orientação personalizada sobre as melhores soluções tecnológicas para cada propriedade.</p>
+            </div>
+            <div class="card bg-white text-gray-800">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-3">Suporte Técnico</h3>
+                <p class="text-gray-700">Acompanhamento e suporte contínuo para garantir o bom uso das tecnologias.</p>
+            </div>
+            <div class="card bg-white text-gray-800">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-3">Laboratórios Móveis</h3>
+                <p class="text-gray-700">Unidades equipadas para levar a educação digital diretamente às comunidades.</p>
+            </div>
+            <div class="card bg-white text-gray-800">
+                <h3 class="text-2xl font-semibold text-emerald-700 mb-3">Desenvolvimento de Apps</h3>
+                <p class="text-gray-700">Criação de aplicativos customizados para as necessidades do agronegócio familiar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Testemunhos -->
+    <section id="testemunhos" class="container mx-auto py-16 px-4 mb-12 bg-white rounded-3xl shadow-xl">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-emerald-700 mb-4">O Que Dizem Nossos Beneficiários</h2>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">Histórias de sucesso de quem transformou sua realidade com a inclusão digital.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/80x80/d1fae5/065f46?text=JR" alt="Foto João Ribeiro" class="w-20 h-20 rounded-full mr-4 object-cover">
+                    <div>
+                        <p class="font-semibold text-xl text-emerald-600">João Ribeiro</p>
+                        <p class="text-sm text-gray-500">Produtor de Leite, Minas Gerais</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic">"Graças à Inclusão Digital no Campo, aprendi a usar aplicativos para gerenciar minha produção e vendi meus produtos online. Minha vida e meu negócio melhoraram muito!"</p>
+            </div>
+            <div class="card">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/80x80/d1fae5/065f46?text=MS" alt="Foto Maria Silva" class="w-20 h-20 rounded-full mr-4 object-cover">
+                    <div>
+                        <p class="font-semibold text-xl text-emerald-600">Maria Silva</p>
+                        <p class="text-sm text-gray-500">Pequena Agricultora, Bahia</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 italic">"Nunca imaginei que poderia acessar tantas informações úteis pela internet. Os cursos foram claros e me deram a confiança para usar a tecnologia no meu dia a dia."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section-gradient text-white py-16 px-4 rounded-t-3xl shadow-xl">
+        <div class="container mx-auto text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Entre em Contato Conosco</h2>
+            <p class="text-lg max-w-3xl mx-auto">Tem dúvidas, sugestões ou quer se juntar a nós nessa missão? Preencha o formulário abaixo ou utilize nossos contatos.</p>
+        </div>
+        <div class="container mx-auto max-w-xl bg-white p-8 rounded-2xl shadow-lg text-gray-800">
+            <form>
+                <div class="mb-6">
+                    <label for="nome" class="block text-gray-700 text-sm font-medium mb-2">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Seu nome">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="mb-6">
+                    <label for="mensagem" class="block text-gray-700 text-sm font-medium mb-2">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Sua mensagem..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary inline-block text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-105">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-8 text-center rounded-t-3xl mt-12">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Inclusão Digital no Campo. Todos os direitos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-emerald-400 mx-2">Política de Privacidade</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="text-gray-400 hover:text-emerald-400 mx-2">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
